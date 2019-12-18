@@ -17,4 +17,8 @@ def f(a):
     return(exp(a))
 I_rom=romberg(f,0,1)
 I_gauss=fixed_quad(f,0,1,n=5)
+print('Trapezoidal:',I_trp)
+print('Simpsons:',I_simps)
+print('Romberg:',I_rom)
+print('Gaussian:',I_gauss)
 
